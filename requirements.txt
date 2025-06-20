@@ -1,0 +1,16 @@
+streamlit
+langchain
+pinecone
+langchain_pinecone
+tiktoken
+python-dotenv
+requests
+python-docx
+pypdf
+langchain-community
+langchain-core
+langchain-huggingface
+huggingface-hub
+docx2txt
+sentence_transformers
+langchain-openai
