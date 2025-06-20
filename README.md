@@ -6,13 +6,13 @@ This is a smart AI-powered app that can *read any PDF or DOCX document, understa
 
 ## What This App Can Do
 
-Upload documents like notes, books, resumes, or articles  
-Automatically generate interview Q&A based on the content  
-Choose how many questions you want per section  
-Chat with the document using your own questions  
-Uses smart AI models from Hugging Face  
-Works with Pinecone to store and search your documents  
-Available via *Streamlit UI* and *FastAPI/Flask UI*  
+- Upload documents like notes, books, resumes, or articles  
+- Automatically generate interview Q&A based on the content  
+- Choose how many questions you want per section  
+- Chat with the document using your own questions  
+- Uses smart AI models from Hugging Face  
+- Works with Pinecone to store and search your documents  
+- Available via *Streamlit UI* and *FastAPI/Flask UI*  
 
 ---
 
