@@ -27,7 +27,7 @@ Available via *Streamlit UI* and *FastAPI/Flask UI*
 ---
 
 ## Project Structure
-
+```
 
 📁 interview-qna-generator/
 │              
@@ -45,7 +45,7 @@ Available via *Streamlit UI* and *FastAPI/Flask UI*
 │   ├── templates/              # HTML templates│   
 │
 └── README.md                   # Full documentation
-
+```
 
 ---
 
