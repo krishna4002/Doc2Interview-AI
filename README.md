@@ -1,6 +1,6 @@
 # 📄 AI Interview Q&A Generator from Documents
 
-This is a smart AI-powered app that can **read any PDF or DOCX document**, understand the content, and **automatically generate important interview-style questions and fully explained answers**. It also lets you **ask your own questions** and have a conversation with the document like you're talking to a teacher.
+This is a smart AI-powered app that can *read any PDF or DOCX document, understand the content, and **automatically generate important interview-style questions and fully explained answers. It also lets you **ask your own questions* and have a conversation with the document like you're talking to a teacher.
 
 ---
 
@@ -10,8 +10,9 @@ Upload documents like notes, books, resumes, or articles
 Automatically generate interview Q&A based on the content  
 Choose how many questions you want per section  
 Chat with the document using your own questions  
-Uses smart AI models from Hugging Face and/or Open Router  
+Uses smart AI models from Hugging Face  
 Works with Pinecone to store and search your documents  
+Available via *Streamlit UI* and *FastAPI/Flask UI*  
 
 ---
 
@@ -25,43 +26,43 @@ Works with Pinecone to store and search your documents
 
 ---
 
-## How It Works (Simple Steps)
+## Project Structure
 
-1. You upload a document (PDF or DOCX).
-2. The app breaks it into smaller readable parts.
-3. Each part is stored in Pinecone with smart understanding (using embeddings).
-4. For each part, the AI model generates **detailed questions and answers**.
-5. You can also **ask your own questions** and get smart responses.
 
----
-
-## 📦 Project Structure
-
-```
-📁 root/
+📁 interview-qna-generator/
+│              
+├── .env                        # API keys
+├── requirements.txt            # All dependencies
 │
-├── backend/              # Handles document reading, storage, and Q&A generation
-├── frontend              # Handles Frontend UI 
-├── .env                  # Stores your API keys securely
-├── requirements.txt      # List of all packages to install
-```
+├── streamlit_app.py            # Streamlit UI
+│
+├── backend_work/
+│   ├── fast_api_app.py         # FastAPI endpoints
+│   ├── backend_qa              # Core logic (shared across UIs)│   
+│
+├── frontend_work/
+│   ├── frontend_flask.py                  # Flask app
+│   ├── templates/              # HTML templates│   
+│
+└── README.md                   # Full documentation
+
 
 ---
 
 ## 🛠 Installation Guide
 
-1. **Clone the project**:
+1. *Clone the project*:
 
-```bash
+bash
 git clone https://github.com/your-username/interview-qna-generator.git
 cd interview-qna-generator
-```
 
-2. **Install required Python packages**:
 
-```bash
+2. *Install required Python packages*:
+
+bash
 pip install -r requirements.txt
-```
+
 
 ---
 
@@ -79,13 +80,29 @@ HF_TOKEN=your-huggingface-api-key
 
 ---
 
-## ▶ How to Run the App
+## ▶ How to Run
+
+### 🚀 Streamlit UI
 
 bash
 streamlit run streamlit_app.py
 
 
-Then open your browser and follow the instructions on the screen.
+### ⚡ FastAPI UI
+
+bash
+cd fastapi_app
+uvicorn main:app --reload
+
+Then open [http://localhost:8000](http://localhost:8000)
+
+### 🌐 Flask UI
+
+bash
+cd flask_app
+python app.py
+
+Then open [http://localhost:5000](http://localhost:5000)
 
 ---
 
@@ -117,6 +134,7 @@ You can also change “3” to any number using a simple option in the app.
 - Very useful for learning and revision  
 - Gives you control over how many Q&As you want  
 - You can talk to the document like a chatbot  
+- Runs with *Streamlit* for quick testing, and *FastAPI/Flask* for integration into products
 
 ---
 
