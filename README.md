@@ -1,6 +1,6 @@
 # 📄 AI Interview Q&A Generator from Documents
 
-This is a smart AI-powered app that can *read any PDF or DOCX document, understand the content, and **automatically generate important interview-style questions and fully explained answers. It also lets you **ask your own questions* and have a conversation with the document like you're talking to a teacher.
+This is a smart AI-powered app that can **read any PDF or DOCX document**, understand the content, and **automatically generate important interview-style questions and fully explained answers**. It also lets you **ask your own questions** and have a conversation with the document like you're talking to a teacher.
 
 ---
 
@@ -12,7 +12,7 @@ This is a smart AI-powered app that can *read any PDF or DOCX document, understa
 - Chat with the document using your own questions  
 - Uses smart AI models from Hugging Face  
 - Works with Pinecone to store and search your documents  
-- Available via *Streamlit UI* and *FastAPI/Flask UI*  
+- Available via **Streamlit UI** and **FastAPI/Flask UI**  
 
 ---
 
@@ -31,8 +31,8 @@ This is a smart AI-powered app that can *read any PDF or DOCX document, understa
 1. You upload a document (PDF or DOCX).
 2. The app breaks it into smaller readable parts.
 3. Each part is stored in Pinecone with smart understanding (using embeddings).
-4. For each part, the AI model generates *detailed questions and answers*.
-5. You can also *ask your own questions* and get smart responses.
+4. For each part, the AI model generates **detailed questions and answers**.
+5. You can also **ask your own questions** and get smart responses.
 
 ---
 
