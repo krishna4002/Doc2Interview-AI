@@ -41,7 +41,7 @@ Available via *Streamlit UI* and *FastAPI/Flask UI*
 │   ├── backend_qa              # Core logic (shared across UIs)│   
 │
 ├── frontend_work/
-│   ├── frontend_flask.py                  # Flask app
+│   ├── frontend_flask.py       # Flask app
 │   ├── templates/              # HTML templates│   
 │
 └── README.md                   # Full documentation
@@ -49,58 +49,60 @@ Available via *Streamlit UI* and *FastAPI/Flask UI*
 
 ---
 
-## 🛠 Installation Guide
+## Installation Guide
 
-1. *Clone the project*:
+1. **Clone the project**:
 
-bash
-git clone https://github.com/your-username/interview-qna-generator.git
-cd interview-qna-generator
+```bash
+git clone https://github.com/your-username/Doc2Interview-AI.git
+cd Doc2Interview-AI
+```
 
+2. **Install required Python packages**:
 
-2. *Install required Python packages*:
-
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
 ## 🔐 Setup .env File
 
-Create a file named .env and paste your keys:
+Create a file named `.env` and paste your keys:
 
 env
 PINECONE_API_KEY=your-pinecone-api-key
 PINECONE_ENV=your-pinecone-environment-name
-HF_TOKEN=your-huggingface-api-key
+OPEN_ROUTER_KEY=your-openRouter-api-key
 
 
 > ⚠ Don’t share your keys publicly. These keep your app secure.
 
 ---
 
-## ▶ How to Run
+## How to Run
 
-### 🚀 Streamlit UI
+### Streamlit UI
 
-bash
+```bash
 streamlit run streamlit_app.py
+```
 
+### FastAPI UI
 
-### ⚡ FastAPI UI
-
-bash
-cd fastapi_app
-uvicorn main:app --reload
+```bash
+cd backend_work
+uvicorn fast_api_app:app --reload
+```
 
 Then open [http://localhost:8000](http://localhost:8000)
 
-### 🌐 Flask UI
+### Flask UI
 
-bash
-cd flask_app
-python app.py
+```bash
+cd frontend_work
+python frontend_flask.py
+```
 
 Then open [http://localhost:5000](http://localhost:5000)
 
