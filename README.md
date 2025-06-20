@@ -26,6 +26,16 @@ Available via *Streamlit UI* and *FastAPI/Flask UI*
 
 ---
 
+## How It Works (Simple Steps)
+
+1. You upload a document (PDF or DOCX).
+2. The app breaks it into smaller readable parts.
+3. Each part is stored in Pinecone with smart understanding (using embeddings).
+4. For each part, the AI model generates *detailed questions and answers*.
+5. You can also *ask your own questions* and get smart responses.
+
+---
+
 ## Project Structure
 ```
 
@@ -108,7 +118,7 @@ Then open [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🧠 How the AI Thinks (Prompt Example)
+## How the AI Thinks (Prompt Example)
 
 This is what we ask the AI:
 
@@ -129,18 +139,18 @@ You can also change “3” to any number using a simple option in the app.
 
 ---
 
-## 💡 What Makes It Special?
+## What Makes It Special?
 
 - You don’t need to write questions manually  
 - Answers are explained in simple language  
 - Very useful for learning and revision  
 - Gives you control over how many Q&As you want  
 - You can talk to the document like a chatbot  
-- Runs with *Streamlit* for quick testing, and *FastAPI/Flask* for integration into products
+- Runs with **Streamlit** for quick testing, and **FastAPI/Flask** for integration into products
 
 ---
 
-## 🧠 Recommended AI Models
+## Recommended AI Models
 
 | Model Name                  | Description                       |
 |----------------------------|-----------------------------------|
@@ -153,25 +163,12 @@ You can also change “3” to any number using a simple option in the app.
 
 ---
 
-## 📌 Real-Life Uses
+## Real-Life Uses
 
-- 🧪 Turn lecture notes into mock interview questions  
-- 📄 Summarize and question business documents  
-- 🧑‍🏫 Teachers generating quiz questions  
-- 🤖 Create training material from manuals  
-- 🧑‍💻 Developers building document chatbots  
-
----
-
-## 📧 Contact
-
-If you face any issues or want to contribute, please open an issue at:  
-🔗 [GitHub Issues](https://github.com/your-username/interview-qna-generator/issues)
-
----
-
-## 📝 License
-
-This project is under the *MIT License* – Free for everyone to use, modify, and share.
+- Turn lecture notes into mock interview questions  
+- Summarize and question business documents  
+- Teachers generating quiz questions  
+- Create training material from manuals  
+- Developers building document chatbots  
 
 ---
