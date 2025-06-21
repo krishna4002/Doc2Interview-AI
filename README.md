@@ -64,7 +64,7 @@ This is a smart AI-powered app that can **read any PDF or DOCX document**, under
 1. **Clone the project**:
 
 ```bash
-git clone https://github.com/your-username/Doc2Interview-AI.git
+git clone https://github.com/krishna4002/Doc2Interview-AI.git
 cd Doc2Interview-AI
 ```
 
